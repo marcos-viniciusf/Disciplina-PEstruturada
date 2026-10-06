@@ -228,4 +228,23 @@ import random
 
 #Q15
 
-print("Alteração")
+lista = []
+tam_lista = random.randint(1,10)
+for i in range(tam_lista):
+    num = random.randint(1,100)
+    lista.append(num)
+
+nova_lista = []
+
+print("Lista original: ", lista)
+
+for num in lista:
+    n_existe = True
+    for comparado in nova_lista:
+        if comparado == num:
+            n_existe = False
+            break
+    if n_existe:
+        nova_lista.append(num)
+
+print("\nNova lista: ", nova_lista)
