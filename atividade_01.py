@@ -266,3 +266,59 @@ import random
 # print("\nÚltimo caractere: ", palavra[-1])
 # print("\nTrês primeiros caracteres: ", palavra[:3])
 # print("\nTrês últimos caracteres: ", palavra[3:])
+
+#Q19
+def menu():
+    print("\n----------------------------------------------------\n")
+    print('''1 -  Cadastrar aluno
+2 - Listar alunos
+3 - Buscar alunos
+4 - Remover aluno
+5 - Sair''')
+    print("\n----------------------------------------------------\n")
+    
+    opc = int(input("Digite uma opção: \n"))    
+    while opc <= 0 or opc > 5:
+        opc = int(input("\nDigite uma opção válida! Opção: "))
+
+    return opc
+
+def cadastro_aluno(alunos):
+    nome = input("\nDigite o nome do aluno: ")
+    alunos.append(nome)
+    print("\n", alunos)
+
+def listar_alunos(alunos):
+    print("\n", alunos)
+
+def buscar_aluno(alunos):
+    nome_buscado = input("\nDigite o nome do aluno a ser buscado: ")
+    for posicao, nome_lista in enumerate(alunos):
+        if nome_lista == nome_buscado:
+            print(f"\n n{nome_buscado} está na posição {posicao+1}")
+            break
+
+def remover_aluno(alunos):
+    nome_buscado = input("\nDigite o nome do aluno a ser removido: ")
+    for nome in alunos:
+        if nome_buscado == nome:
+            alunos.remove(nome_buscado)        
+    print("\n", alunos)
+###############
+###############
+alunos = []
+opc = menu()
+
+match opc:
+    case 1:
+        cadastro_aluno(alunos)
+    case 2:   
+        listar_alunos(alunos)  
+    case 3:
+        buscar_aluno(alunos)
+    case 4:
+        remover_aluno(alunos)
+    case _:
+        print("\nErro!")
+
+
