@@ -1,0 +1,1 @@
+Resolução das questões da atividade 01 da disciplina de Programação Estrutura - 2026.2 - ADS
