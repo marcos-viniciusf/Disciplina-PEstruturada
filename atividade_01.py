@@ -228,23 +228,41 @@ import random
 
 #Q15
 
-lista = []
-tam_lista = random.randint(1,10)
-for i in range(tam_lista):
-    num = random.randint(1,100)
-    lista.append(num)
+# lista = []
+# tam_lista = random.randint(1,10)
+# for i in range(tam_lista):
+#     num = random.randint(1,100)
+#     lista.append(num)
 
-nova_lista = []
+# nova_lista = []
 
-print("Lista original: ", lista)
+# print("Lista original: ", lista)
 
-for num in lista:
-    n_existe = True
-    for comparado in nova_lista:
-        if comparado == num:
-            n_existe = False
-            break
-    if n_existe:
-        nova_lista.append(num)
+# for num in lista:
+#     n_existe = True
+#     for comparado in nova_lista:
+#         if comparado == num:
+#             n_existe = False
+#             break
+#     if n_existe:
+#         nova_lista.append(num)
 
-print("\nNova lista: ", nova_lista)
+# print("\nNova lista: ", nova_lista)
+
+#Q16
+
+# frase = input("Digite uma frase: ")
+
+# print("\nFrase sem espaço no início e fim: ", frase.strip())
+# print("\nFrase em maiúsculo: ", frase.upper())
+# print("\nFrase em minúsculo: ", frase.lower())
+# print("\nTroca a palavra 'Python' por 'Programação': ", frase.replace("Python", "Programação"))
+
+#Q17
+
+# palavra = input("Digite uma palavra: ")
+
+# print("\nPrimeiro caractere: ", palavra[0])
+# print("\nÚltimo caractere: ", palavra[-1])
+# print("\nTrês primeiros caracteres: ", palavra[:3])
+# print("\nTrês últimos caracteres: ", palavra[3:])
