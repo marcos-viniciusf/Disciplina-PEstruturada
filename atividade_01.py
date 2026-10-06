@@ -227,3 +227,5 @@ import random
 #     print(f"\nValor {valor} encontrado na lista no(s) indíce(s) {indice}")
 
 #Q15
+
+print("Alteração")
